@@ -12,7 +12,7 @@ app.get("/", (req, res) => {
         message: "Retail Platform API",
         VERSION: VERSION,
         environment: ENVIRONMENT,
-        payment: "payment procesing is working"
+        payment: "payment processing fixed in v4.2.1"
     });
 });
 
