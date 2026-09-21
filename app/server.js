@@ -16,6 +16,13 @@ app.get("/", (req, res) => {
     });
 });
 
+app.get("products", (req, res) => {
+    res.json({
+        products: ["Laptop", "Mobile", "Tablet", "Smart Watch"],
+        VERSION: VERSION
+    });
+});
+
 app.get("/health", (req, res) => {
     if (FAIL_HEALTH) {
         res.status(500).json({
