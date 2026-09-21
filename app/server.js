@@ -23,6 +23,13 @@ app.get("products", (req, res) => {
     });
 });
 
+app.get("/orders", (req, res) => {
+    res.json({
+        orders: ["Order 1", "Order 2", "Order 3"],
+        VERSION: VERSION
+    });
+});
+
 app.get("/health", (req, res) => {
     if (FAIL_HEALTH) {
         res.status(500).json({
