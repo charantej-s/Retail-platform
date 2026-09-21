@@ -1,0 +1,16 @@
+services:
+  retail-app:
+   image: retail-app:${APP_VERSION:-4.2.0}
+   container_name: retail-app
+   ports:
+      - "8081:8081"
+   environment:
+      APP_VERSION: ${APP_VERSION:-4.2.0}
+      ENVIRONMENT: ${ENVIRONMENT:-UAT}
+      FAIL_HEALTH: ${FAIL_HEALTH:-false}
+
+   networks:
+    - retail-network   
+networks:
+  retail-network:
+   name: retail-network

@@ -1,0 +1,14 @@
+{
+    "name": "retail-platform",
+    "version": "4.2.0",
+    "description": "DevOps assessmnet retail application",
+    "main": "server.js",
+
+    "scripts": 
+    {
+        "start":"node server.js"
+    },
+     "dependencies": {
+        "express": "^4.21.2"
+     }
+}
